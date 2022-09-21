@@ -1,27 +1,46 @@
-const text_field = document.querySelector("input");
-const btn_add = document.querySelector("#btn_add > button");
-const todo_list = document.querySelector("#todo_list");
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
-const handleRemoveTodoItem = function (e) {
-  const button = e.target;
-  const parent = button.parentElement.parentElement;
-  parent.remove();
-};
+const text_field = $("input");
+const btn_add = $("#btn_add");
+const label = $("#text_field");
+const span = $(".span");
+const todo_list = $("#todo_list")
 
-const handleCreateTodoItem = function (text) {
-  const div = document.createElement("div");
-  div.classList.add("todo_item");
-  div.innerHTML = ` <div class="text"><span>${text}</span></div>
-  <div class="btn_remove">
-    <button onclick="handleRemoveTodoItem(event)">X</button>
-  </div>`;
+function handleCreateTodoItem(text) {
+  if(text !== "") {
+    const div = document.createElement("div");
+    div.classList.add("todo_item");
+    div.innerHTML = ` <label class="text" for="${text}">
+    <input type="checkbox" id='${text}'>
+    <span>${text}</span>
+    </label>
+    <div class="btn_remove"><span>x</span></div>`;
+    return div;
+  }
+  return;
+}
 
-  return div;
-};
 
-const handleAdd = function () {
-  todo_list.appendChild(handleCreateTodoItem(text_field.value));
-  text_field.value = "";
-};
+function handleAdd() {
+  todo_list.appendChild(handleCreateTodoItem(text_field.value))
+  text_field.value = ""
+  text_field.focus()
+}
 
-btn_add.addEventListener("click", handleAdd);
+
+text_field.addEventListener("focus", () => {
+  label.classList.add("active");
+  span.classList.add("active_span");
+});
+
+text_field.addEventListener("blur", () => {
+  if (text_field.value != "") {
+    return;
+  }
+  label.classList.remove("active");
+  span.classList.remove("active_span");
+});
+
+
+btn_add.addEventListener("click", handleAdd)

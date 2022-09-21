@@ -10,16 +10,22 @@
   <body>
     <div id="app">
       <div id="todo">
-        <div id="todo_head">
-          <h1>todo list</h1>
+        <div id="todo_title">
+          <h4>Awesome Tode List</h4>
         </div>
-        <div id="form">
-          <div id="text_field">
-            <input type="text" placeholder="Enter your todo" />
-          </div>
-          <div id="btn_add"><button>add</button></div>
+        <div id="todo_form">
+          <label id="text_field" for="input_text" class=""
+            ><input
+              type="text"
+              placeholder=""
+              id="input_text" />
+            <span class="span">What do you need to do tody?</span
+          ></label>
+          <div class=""><button id="btn_add">add</button></div>
         </div>
-        <div id="todo_list"></div>
+        <div id="todo_list">
+         
+        </div>
       </div>
     </div>
     <script src="./index.js"></script>
