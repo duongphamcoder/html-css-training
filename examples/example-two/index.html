@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice-One</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <head>
+          <div id="header">
+            <div class="header-item">
+              <div class="header-item-logo">
+                <img src="./img/logo.png" alt="logo" />
+              </div>
+              <label class="header-item-search" for="search-input">
+                <div class="header-item-search-icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
+                <div class="header-item-search-input">
+                  <input
+                    type="text"
+                    placeholder="type something"
+                    id="search-input"
+                  />
+                </div>
+              </label>
+            </div>
+            <div class="header-item">
+              <ul class="navbar">
+                <li class="navbar-item active">home</li>
+                <li class="navbar-item">browse</li>
+                <li class="navbar-item">details</li>
+                <li class="navbar-item">Streams</li>
+                <li class="navbar-item btn-profile">
+                  <div class="btn-profile-title">profile</div>
+                  <div class="btn-profile-avatar">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </head>
+        <section>
+          <div id="content">
+            <div id="banner">
+              <div id="banner-title"><h3>welcome to cyborg</h3></div>
+              <div id="banner-introduce">
+                <h1>
+                  <span>browse</span> our popular <br />
+                  games here
+                </h1>
+              </div>
+              <div class="banner-btn">
+                <button class="btn banner-btn-item">browse now</button>
+              </div>
+            </div>
+            <div id="popular-games">
+              <div class="title title-underline">
+                <h1><span>most popular</span> <span>right now</span></h1>
+              </div>
+              <div class="popular-games-box flex-layout">
+                <div class="card flex-layout-item">
+                  <div class="popular-games-box-item">
+                    <div class="popular-games-box-item-image">
+                      <img src="./img/popular-01.jpg" alt="" />
+                    </div>
+                    <div class="popular-games-box-item-infor">
+                      <div class="popular-games-box-item-infor-item">
+                        <div class="popular-games-box-item-infor-item-text">
+                          <span>name-game</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-stars">
+                          <ion-icon name="star-sharp"></ion-icon>
+                          <span>4.5</span>
+                        </div>
+                      </div>
+                      <div class="popular-games-box-item-infor-item">
+                        <div
+                          class="popular-games-box-item-infor-item-descripton"
+                        >
+                          <span>Stream-X</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-download">
+                          <ion-icon name="arrow-down-circle-sharp"></ion-icon>
+                          <span>2.3M</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card flex-layout-item">
+                  <div class="popular-games-box-item">
+                    <div class="popular-games-box-item-image">
+                      <img src="./img/popular-01.jpg" alt="" />
+                    </div>
+                    <div class="popular-games-box-item-infor">
+                      <div class="popular-games-box-item-infor-item">
+                        <div class="popular-games-box-item-infor-item-text">
+                          <span>name-game</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-stars">
+                          <ion-icon name="star-sharp"></ion-icon>
+                          <span>4.5</span>
+                        </div>
+                      </div>
+                      <div class="popular-games-box-item-infor-item">
+                        <div
+                          class="popular-games-box-item-infor-item-descripton"
+                        >
+                          <span>Stream-X</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-download">
+                          <ion-icon name="arrow-down-circle-sharp"></ion-icon>
+                          <span>2.3M</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card flex-layout-item">
+                  <div class="popular-games-box-item">
+                    <div class="popular-games-box-item-image">
+                      <img src="./img/popular-01.jpg" alt="" />
+                    </div>
+                    <div class="popular-games-box-item-infor">
+                      <div class="popular-games-box-item-infor-item">
+                        <div class="popular-games-box-item-infor-item-text">
+                          <span>name-game</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-stars">
+                          <ion-icon name="star-sharp"></ion-icon>
+                          <span>4.5</span>
+                        </div>
+                      </div>
+                      <div class="popular-games-box-item-infor-item">
+                        <div
+                          class="popular-games-box-item-infor-item-descripton"
+                        >
+                          <span>Stream-X</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-download">
+                          <ion-icon name="arrow-down-circle-sharp"></ion-icon>
+                          <span>2.3M</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card flex-layout-item">
+                  <div class="popular-games-box-item">
+                    <div class="popular-games-box-item-image">
+                      <img src="./img/popular-01.jpg" alt="" />
+                    </div>
+                    <div class="popular-games-box-item-infor">
+                      <div class="popular-games-box-item-infor-item">
+                        <div class="popular-games-box-item-infor-item-text">
+                          <span>name-game</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-stars">
+                          <ion-icon name="star-sharp"></ion-icon>
+                          <span>4.5</span>
+                        </div>
+                      </div>
+                      <div class="popular-games-box-item-infor-item">
+                        <div
+                          class="popular-games-box-item-infor-item-descripton"
+                        >
+                          <span>Stream-X</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-download">
+                          <ion-icon name="arrow-down-circle-sharp"></ion-icon>
+                          <span>2.3M</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card flex-layout-item">
+                  <div class="popular-games-box-item">
+                    <div class="popular-games-box-item-image">
+                      <img src="./img/popular-01.jpg" alt="" />
+                    </div>
+                    <div class="popular-games-box-item-infor">
+                      <div class="popular-games-box-item-infor-item">
+                        <div class="popular-games-box-item-infor-item-text">
+                          <span>name-game</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-stars">
+                          <ion-icon name="star-sharp"></ion-icon>
+                          <span>4.5</span>
+                        </div>
+                      </div>
+                      <div class="popular-games-box-item-infor-item">
+                        <div
+                          class="popular-games-box-item-infor-item-descripton"
+                        >
+                          <span>Stream-X</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-download">
+                          <ion-icon name="arrow-down-circle-sharp"></ion-icon>
+                          <span>2.3M</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card flex-layout-item">
+                  <div class="popular-games-box-item">
+                    <div class="popular-games-box-item-image">
+                      <img src="./img/popular-01.jpg" alt="" />
+                    </div>
+                    <div class="popular-games-box-item-infor">
+                      <div class="popular-games-box-item-infor-item">
+                        <div class="popular-games-box-item-infor-item-text">
+                          <span>name-game</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-stars">
+                          <ion-icon name="star-sharp"></ion-icon>
+                          <span>4.5</span>
+                        </div>
+                      </div>
+                      <div class="popular-games-box-item-infor-item">
+                        <div
+                          class="popular-games-box-item-infor-item-descripton"
+                        >
+                          <span>Stream-X</span>
+                        </div>
+                        <div class="popular-games-box-item-infor-item-download">
+                          <ion-icon name="arrow-down-circle-sharp"></ion-icon>
+                          <span>2.3M</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-discover-popular">discover popular</button>
+            </div>
+            <div id="library-games">
+              <div class="title title-underline">
+                <h1><span>your gaming</span> <span>library</span></h1>
+              </div>
+              <div class="library-games-table">
+                <div class="library-games-table-item">
+                  <ul>
+                    <li>
+                      <img
+                        src="./img/popular-02.jpg"
+                        alt=""
+                        class="library-games-table-item-image"
+                      />
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-name">
+                        <h3>Dota</h3>
+                        <p>steam-x</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-date-add">
+                        <h3>Date Added</h3>
+                        <p>24/08/2036</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-hours-play">
+                        <h3>Hours Played</h3>
+                        <p>634 H 22 Mins</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-currently">
+                        <h3>Currently</h3>
+                        <p>Downloaded</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button class="library-games-table-item-btn btn">
+                        download
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="library-games-table-item">
+                  <ul>
+                    <li>
+                      <img
+                        src="./img/popular-02.jpg"
+                        alt=""
+                        class="library-games-table-item-image"
+                      />
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-name">
+                        <h3>Dota</h3>
+                        <p>steam-x</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-date-add">
+                        <h3>Date Added</h3>
+                        <p>24/08/2036</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-hours-play">
+                        <h3>Hours Played</h3>
+                        <p>634 H 22 Mins</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-currently">
+                        <h3>Currently</h3>
+                        <p>Downloaded</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button class="library-games-table-item-btn btn">
+                        download
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="library-games-table-item">
+                  <ul>
+                    <li>
+                      <img
+                        src="./img/popular-02.jpg"
+                        alt=""
+                        class="library-games-table-item-image"
+                      />
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-name">
+                        <h3>Dota</h3>
+                        <p>steam-x</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-date-add">
+                        <h3>Date Added</h3>
+                        <p>24/08/2036</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-hours-play">
+                        <h3>Hours Played</h3>
+                        <p>634 H 22 Mins</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="library-games-table-item-currently">
+                        <h3>Currently</h3>
+                        <p>Downloaded</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button class="library-games-table-item-btn btn">
+                        download
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="library-games btn">View Your Library</button>
+            </div>
+          </div>
+        </section>
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>
