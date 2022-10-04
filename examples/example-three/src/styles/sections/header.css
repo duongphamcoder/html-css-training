@@ -1,0 +1,146 @@
+.header {
+  font-family: var(--font-roboto);
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  color: var(--second-color);
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.header-logo-icon {
+  font-size: 35px;
+  fill: var(--second-color);
+  padding-right: 10px;
+}
+
+.navigation-icon,
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-icon {
+  position: relative;
+}
+
+.navigation-icon > ion-icon {
+  font-size: 28px;
+}
+
+.m-navigation {
+  position: fixed;
+  width: 150px;
+  top: 63px;
+  right: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+#check-list:checked ~ .m-navigation {
+  display: none;
+}
+
+.m-navigation-item-link {
+  display: block;
+  padding: 15px 20px;
+  color: var(--fourth-color);
+  position: relative;
+}
+
+.m-navigation-item-link.active::after,
+.m-navigation-item-link:hover {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: var(--fifth-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation-item-link {
+  text-transform: capitalize;
+  color: var(--fourth-color);
+  padding: 10px 15px;
+  font-size: 18px;
+  font-family: var(--font-roboto);
+  display: inline-block;
+}
+
+.navigation-item-link.active {
+  box-shadow: 0 2px 0px 0 var(--fifth-color);
+}
+
+.banner {
+  min-height: 200px;
+  background-image: url(../../asset/image/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 465px;
+  display: flex;
+}
+
+.form-input,
+.form-input::placeholder {
+  color: var(--primmary-color);
+  font-size: 18px;
+}
+
+.form-input {
+  flex: 1;
+  padding: 15px;
+}
+
+.form-input::placeholder {
+  text-transform: capitalize;
+}
+
+.btn-submit {
+  padding: 10px 30px;
+}
+
+.btn-submit > ion-icon {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/*
+    Mobile divices
+*/
+@media (max-width: 739px) {
+  .form {
+    width: 360px;
+  }
+}
+
+/*
+   IPads & tablets
+*/
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/*
+   large screens like Desktops
+*/
+@media (min-width: 1024px) {
+}

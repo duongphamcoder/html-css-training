@@ -1,0 +1,49 @@
+#app {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  min-height: 100vh;
+}
+
+/*
+    Mobile divices
+*/
+@media (max-width: 739px) {
+  .m-hidden {
+    display: none !important;
+  }
+  .container {
+    width: 360px;
+  }
+}
+
+/*
+     IPads & tablets
+  */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .b-hidden {
+    display: none !important;
+  }
+  .container {
+    width: 790px;
+  }
+}
+
+/*
+     large screens like Desktops
+  */
+@media (min-width: 1024px) {
+  .p-hidden {
+    display: none !important;
+  }
+
+  .container {
+    width: 1200px;
+  }
+}

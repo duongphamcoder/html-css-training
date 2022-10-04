@@ -1,0 +1,18 @@
+/*
+    Mobile divices
+*/
+@media (max-width: 739px) {
+}
+
+/*
+   IPads & tablets
+*/
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/*
+   large screens like Desktops
+*/
+@media (min-width: 1024px) {
+}

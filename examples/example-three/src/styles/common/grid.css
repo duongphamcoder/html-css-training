@@ -1,0 +1,35 @@
+.d-grid {
+  display: grid;
+  gap: 20px;
+}
+
+/*
+    Mobile divices
+*/
+@media (max-width: 739px) {
+  .m-col-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*
+   IPads & tablets
+*/
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .b-col-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .b-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*
+   large screens like Desktops
+*/
+@media (min-width: 1024px) {
+  .p-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
