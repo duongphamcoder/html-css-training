@@ -1,0 +1,54 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-step {
+  width: 165px;
+  height: 55px;
+  font-size: 18px;
+}
+
+.btn-step.inactive {
+  opacity: 0.7;
+}
+
+.pagination-group {
+  display: flex;
+  padding: 20px;
+}
+
+.pagination-btn {
+  width: 60px;
+  height: 55px;
+  margin: 0 10px;
+}
+
+.pagination-btn.active {
+  background-color: var(--primmary-color);
+  color: #fff;
+}
+
+/*
+    Mobile divices
+*/
+@media (max-width: 739px) {
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*
+     IPads & tablets
+  */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/*
+     large screens like Desktops
+  */
+@media (min-width: 1024px) {
+}

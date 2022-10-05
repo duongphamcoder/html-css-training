@@ -4,8 +4,15 @@
   align-items: center;
   justify-content: center;
   border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: #fff;
 }
 
 .btn-primmary {
   background-color: var(--primmary-color);
+}
+
+.btn-default {
+  color: var(--fourth-colo);
 }

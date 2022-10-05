@@ -3,6 +3,18 @@
   gap: 20px;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 /*
     Mobile divices
 */
@@ -31,5 +43,9 @@
 @media (min-width: 1024px) {
   .p-col-3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .p-col-4 {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
