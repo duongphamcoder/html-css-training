@@ -1,0 +1,21 @@
+:root {
+  --font-merri: "Merriweather", serif;
+  --font-mont: "Montserrat", sans-serif;
+  --font-robo: "Roboto", sans-serif;
+  --width-main: 1055px;
+  --color-bright-green: #6fb048;
+  --color-drak-green: #2d7370;
+  --color-drak-green-2: #0f5f5c;
+  --color-dark-green-opacity: #83a7a5;
+  --color-gray: #f2f2f2;
+  --color-gray-opacity: #f2f2f2;
+  --color-gray-opacity-2: #6a8082;
+  --color-green-opacity: #eef1ec;
+  --color-white: #fff;
+  --height-660: 660px;
+  --height-665: 665px;
+  --height-505: 505px;
+  --font-weight-400: 400;
+  --font-weight-300: 300;
+  --font-weight-500: 500;
+}

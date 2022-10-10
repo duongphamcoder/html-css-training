@@ -1,0 +1,17 @@
+.need-help-wrapper {
+}
+
+.need-help-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.need-help-email {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 10px 0;
+  color: var(--color-drak-green);
+}

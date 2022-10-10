@@ -1,0 +1,45 @@
+.quote-wrapper {
+  font-family: var(--font-robo);
+  display: flex;
+  align-items: center;
+}
+
+.quote-item:first-child {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.quote-item:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.quote-item-text {
+  padding-right: 15px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 40px;
+  font-family: var(--font-merri);
+  text-align: start;
+}
+
+.quote-item-author {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-bright-green);
+}
+
+.quote-item-text,
+.quote-item-company {
+  color: var(--color-dark-green-opacity);
+}
+
+.quote-item-company {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}

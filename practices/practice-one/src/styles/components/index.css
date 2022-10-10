@@ -1,0 +1,40 @@
+@import url(./button.css);
+@import url(./heading.css);
+
+#app-wrapper {
+  padding-bottom: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  width: var(--width-main);
+}
+
+.h-660 {
+  min-height: var(--height-660);
+}
+
+.h-665 {
+  min-height: var(--height-665);
+}
+
+.h-505 {
+  min-height: var(--height-505);
+}
+
+.section-tick {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.section-tick-icon {
+}
+
+.section-tick-text {
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: var(--font-weight-300);
+  padding: 0 15px;
+  color: var(--color-dark-green-opacity);
+}

@@ -1,0 +1,20 @@
+.btn {
+  padding: 15px 25px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.btn-default {
+  background-color: var(--color-gray-opacity-2);
+}
+
+.btn-primmary {
+  background-color: var(--color-bright-green);
+}
+
+.btn-secondary {
+  background-color: var(--color-dark-green-opacity);
+}
