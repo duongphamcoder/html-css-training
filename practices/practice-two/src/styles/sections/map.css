@@ -1,0 +1,31 @@
+.section-body-4-wrapper {
+  background: url(../../assets/images/content/feature/Object.svg)
+      right no-repeat,
+    url(../../assets/images/content/feature/Rectangle\ 7.jpg)
+      center;
+  font-family: var(--font-robo);
+}
+
+.section-body-4 {
+  display: flex;
+  align-items: center;
+}
+
+.section-body-4-item {
+  width: 500px;
+}
+
+.section-body-4-item-title {
+  font-weight: var(--font-weight-300);
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--color-drak-green);
+}
+
+.section-body-4-item-desc {
+  font-weight: var(--font-weight-400);
+  font-size: 14px;
+  line-height: 24px;
+  padding: 15px 0;
+  color: var(--color-dark-green-opacity);
+}
