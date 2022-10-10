@@ -1,0 +1,106 @@
+.best-of-feature {
+  padding: 65px 0;
+  font-family: var(--font-robo);
+}
+
+.best-of-feature-list {
+  --data: 90px;
+  display: flex;
+  padding: 25px 0 100px;
+  position: relative;
+}
+
+.best-of-feature-list::after {
+  position: absolute;
+  content: "";
+  width: var(--data);
+  height: 0.4mm;
+  background-color: var(--color-gray-opacity);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.best-of-feature-list::before {
+  position: absolute;
+  content: "";
+  height: var(--data);
+  width: 0.5mm;
+  background-color: var(--color-gray-opacity);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.best-of-feature-item {
+  text-align: center;
+  padding: 0 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.best-of-feature-item-icon {
+  padding: 10px 0;
+}
+
+.best-of-feature-item-title {
+  /* text-transform: capitalize; */
+  font-weight: var(--font-weight-400);
+  color: var(--color-drak-green);
+  padding: 10px 0;
+}
+
+.best-of-feature-item-desc {
+  font-weight: var(--font-weight-300);
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-dark-green-opacity);
+}
+
+.best-of-feature-others {
+  padding: 25px 0;
+}
+.best-of-feature-others-group {
+  display: flex;
+  padding: 30px 0 30px 30px;
+}
+
+.best-of-feature-others-group-item {
+  flex: 1;
+}
+
+.best-of-feature-others-group-item:first-child {
+  padding-right: 30px;
+}
+
+.best-of-feature-others-group-item:last-child {
+  padding-left: 30px;
+}
+
+.best-of-feature-others-group-item-title {
+  display: flex;
+  align-items: center;
+}
+
+.best-of-feature-others-group-item-title
+  > .best-of-feature-others-group-item-title-icon {
+  --value: 37px;
+  width: var(--value);
+  height: var(--value);
+}
+
+.best-of-feature-others-group-item-title > p {
+  font-weight: var(--font-weight-400);
+  padding: 0 20px;
+  color: var(--color-drak-green);
+}
+
+.best-of-feature-others-group-item-desc {
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: var(--font-weight-300);
+  line-height: 22px;
+  text-align: justify;
+  color: var(--color-dark-green-opacity);
+}

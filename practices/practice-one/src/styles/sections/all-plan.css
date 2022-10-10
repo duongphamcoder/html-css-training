@@ -1,0 +1,19 @@
+.all-plans-wrapper {
+  padding: 55px 0;
+}
+
+.all-plans-wrapper > .section-title {
+  font-weight: var(--font-weight-300);
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.all-plans {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.all-plans-item {
+  flex: 1;
+}

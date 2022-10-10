@@ -1,0 +1,33 @@
+.download-wrapper {
+  background: url(../../assets/images/content/feature/Object.jpg)
+    center no-repeat;
+  background-size: cover;
+  font-family: var(--font-robo);
+}
+
+.download-list {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download-item-title {
+  font-weight: var(--font-weight-300);
+  font-size: 28px;
+  line-height: 33px;
+  color: var(--color-drak-green);
+}
+
+.download-item-desc {
+  font-weight: var(--font-weight-400);
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--color-dark-green-opacity);
+}
+
+.btn-download-item {
+  font-weight: var(--font-weight-400);
+  font-size: 13px;
+  line-height: 16px;
+}
