@@ -1,0 +1,32 @@
+.heading {
+  text-align: center;
+  font-family: var(--font-robo);
+}
+
+.heading-title {
+  padding: 10px 0;
+  position: relative;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--third-color);
+}
+
+.heading-title::after {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 0.1mm;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading-description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 25px 0;
+  color: var(--fourth-color);
+}
