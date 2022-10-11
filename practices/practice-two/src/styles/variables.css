@@ -12,4 +12,11 @@
   --eighth-color: #eef1ec;
   --ninth-color: #fff;
   --tenth-color: #6b8282;
+  --min-width-mb: 320px;
+  --max-width-mb: 480px;
+  --min-width-ip: 481px;
+  --max-width-ip: 768px;
+  --min-width-tl: 769px;
+  --max-width-tl: 1024px;
+  --min-width-dk: 1200px;
 }
