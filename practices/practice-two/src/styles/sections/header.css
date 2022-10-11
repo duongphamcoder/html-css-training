@@ -1,9 +1,4 @@
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.banner {
+.header {
   background: linear-gradient(
       360deg,
       rgba(0, 0, 0, 5e-5) 0%,
@@ -58,17 +53,17 @@ a {
   padding-right: 5px;
 }
 
-.c-md-navigation,
-.c-xl-navigations {
+.mobile-navigation,
+.pc-navigations {
   display: none;
 }
 
-.c-xl-navigations-item-link,
-.c-md-navigations-item-link {
+.pc-navigations-item-link,
+.mobile-navigations-item-link {
   text-transform: uppercase;
   color: var(--seventh-color);
 }
-.c-xl-navigations-item-btn {
+.pc-navigations-item-btn {
   padding: 10px 15px;
 }
 
@@ -153,21 +148,21 @@ iPads & tablets - md
 styles common mobile and ipads: c-md
 */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .c-md-navigation {
+  .mobile-navigation {
     position: relative;
     display: block;
   }
 
-  .c-md-navigation-icon {
+  .apps-sharp-icon {
     font-size: 25px;
     color: var(--ninth-color);
   }
 
-  #checkbox:checked ~ .c-md-navigations {
+  #checkbox:checked ~ .mobile-navigations {
     display: block;
   }
 
-  .c-md-navigations {
+  .mobile-navigations {
     display: none;
     width: 150px;
     position: absolute;
@@ -179,24 +174,18 @@ styles common mobile and ipads: c-md
     animation: appear 0.4s linear;
   }
 
-  @keyframes appear {
-    from {
-      opacity: 0;
-    }
-  }
-
-  .c-md-navigations-item {
+  .mobile-navigations-item {
     text-align: center;
     padding: 5px 0;
   }
 
-  .c-md-navigations-item-link {
+  .mobile-navigations-item-link {
     display: block;
     padding: 10px;
     text-align: center;
   }
 
-  .c-md-navigations-item-btn {
+  .mobile-navigations-item-btn {
     padding: 10px 15px;
   }
 }
@@ -227,16 +216,16 @@ large screens like Desktops: xl
     padding: 25px 0;
   }
 
-  .c-xl-navigations {
+  .pc-navigations {
     display: flex;
     align-items: center;
   }
 
-  .c-xl-navigations-item {
+  .pc-navigations-item {
     padding: 0 10px;
   }
 
-  .c-xl-navigations-item-link {
+  .pc-navigations-item-link {
     padding: 0 5px;
     font-weight: 400;
     font-size: 13px;
@@ -244,8 +233,8 @@ large screens like Desktops: xl
     transition: color 0.4s;
   }
 
-  .c-xl-navigations-item-link.active,
-  .c-xl-navigations-item-link:hover {
+  .pc-navigations-item-link.active,
+  .pc-navigations-item-link:hover {
     color: var(--ninth-color);
   }
 }
