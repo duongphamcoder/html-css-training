@@ -21,6 +21,8 @@
   padding: 0 3px;
 }
 
+/* TODO: Add to late */
+
 /* mobile devices - sm */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .footer-gruop-top {
