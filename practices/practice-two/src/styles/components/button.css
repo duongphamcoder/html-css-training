@@ -1,0 +1,17 @@
+.btn {
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.btn-default {
+  background-color: var(--seventh-color);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-second {
+  background-color: #6b8282;
+}
