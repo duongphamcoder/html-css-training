@@ -1,0 +1,48 @@
+.footer-item {
+  text-align: center;
+  font-family: var(--font-robo);
+}
+
+.footer-item-title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--second-color);
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.footer-item-description,
+.footer-item-description > .phone {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: var(--fourth-color);
+  padding: 5px 0;
+}
+
+.footer-item-description > .email {
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.footer-item-form {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: var(--eleventh-color);
+  border-radius: 2px;
+  padding: 0 10px;
+}
+
+.footer-item-form-input {
+  padding: 8px 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.footer-item-form-input::placeholder {
+  text-transform: capitalize;
+  color: var(--tenth-color);
+}
