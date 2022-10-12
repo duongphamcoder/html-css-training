@@ -1,3 +1,7 @@
 .title {
-  font-family: var(--font-robo);
+  color: var(--third-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 0;
 }
