@@ -1,0 +1,109 @@
+.template-wrapper {
+  background-color: var(--sixth-color);
+}
+
+.template-item {
+  display: grid;
+  gap: 30px;
+}
+
+.template-image {
+  background-color: transparent;
+  position: relative;
+}
+
+.image {
+  width: 508px;
+}
+
+.image-absolute {
+  position: absolute;
+}
+
+.template-list-tick {
+  padding: 20px 0;
+}
+
+/* TODO: Add to late */
+/*
+mobile devices - sm
+ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .image {
+    width: 100%;
+    transform: translateX(-50px);
+  }
+
+  .image-absolute {
+    width: 125px;
+    top: 27px;
+    left: 36.5%;
+  }
+}
+
+/*
+iPads & tablets - md
+*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .image {
+    transform: translateX(-75px);
+  }
+  .image-absolute {
+    top: 45px;
+    left: 40.5%;
+  }
+}
+
+/*
+styles common mobile and ipads: c-md
+*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .template-item {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .template-image {
+    text-align: center;
+  }
+
+  .template-details {
+    padding: 30px 0;
+  }
+
+  .template-details-title,
+  .template-details-desc {
+    text-align: center;
+  }
+}
+
+/*
+small screens like laptop : lg
+*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*
+large screens like Desktops: xl
+*/
+@media screen and (min-width: 1025px) {
+}
+
+/*
+ small screens like laptop and large screens like Desktops: c-xl
+ */
+@media screen and (min-width: 769px) {
+  .template-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-absolute {
+    top: 45px;
+    left: 51.5%;
+  }
+
+  .template-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
