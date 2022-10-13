@@ -1,0 +1,11 @@
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--third-color);
+}
+
+.text-third {
+  color: var(--fourth-color);
+}
