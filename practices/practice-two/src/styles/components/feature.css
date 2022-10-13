@@ -1,18 +1,18 @@
-.feature-group-one-item {
+.feature-one-item {
   text-align: center;
   font-family: var(--font-robo);
   padding: 20px 0;
 }
 
-.feature-group-one-item-title {
+.feature-one-item-title {
   padding-top: 20px;
 }
 
-.feature-group-two-item {
+.feature-two-item {
   font-family: var(--font-robo);
 }
 
-.feature-group-two-item-desc {
+.feature-two-item-desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
