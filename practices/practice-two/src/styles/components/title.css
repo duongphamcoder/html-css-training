@@ -4,11 +4,14 @@
   font-size: 18px;
   line-height: 22px;
   padding: 10px 0;
+  font-family: var(--font-robo);
 }
 
 .title.bold {
-  font-family: var(--font-robo);
   font-weight: 300;
+}
+
+.title-md {
   font-size: 32px;
   line-height: 38px;
 }
