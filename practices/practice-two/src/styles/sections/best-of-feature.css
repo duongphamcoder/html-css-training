@@ -1,0 +1,90 @@
+.feature-wrapper {
+  /* padding: 30px 0; */
+}
+
+.feature-group {
+  --a: 90px;
+  --b: 2px;
+  display: grid;
+  gap: 30px;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.feature-group:nth-child(2):before {
+  position: absolute;
+  content: "";
+  width: var(--a);
+  height: var(--b);
+  background-color: var(--eleventh-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature-group:nth-child(2):after {
+  position: absolute;
+  content: "";
+  width: var(--b);
+  height: var(--a);
+  background-color: var(--eleventh-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature-group:nth-child(3) {
+  padding: 50px 0;
+}
+
+/* TODO: Add to late */
+/*
+mobile devices - sm
+ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .feature-group:nth-child(2),
+  .feature-group:nth-child(3) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*
+iPads & tablets - md
+*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .feature-group:nth-child(2),
+  .feature-group:nth-child(3) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*
+styles common mobile and ipads: c-md
+*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+}
+
+/*
+small screens like laptop : lg
+*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*
+large screens like Desktops: xl
+*/
+@media screen and (min-width: 1025px) {
+}
+
+/*
+ small screens like laptop and large screens like Desktops: c-xl
+ */
+@media screen and (min-width: 769px) {
+  .feature-group:nth-child(2) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature-group:nth-child(3) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

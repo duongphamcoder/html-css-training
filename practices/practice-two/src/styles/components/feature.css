@@ -1,0 +1,58 @@
+.feature-group:nth-child(2) .feature-group-item {
+  text-align: center;
+  font-family: var(--font-robo);
+  padding: 20px 0;
+}
+
+.feature-group:nth-child(2) .feature-group-title {
+  padding-top: 20px;
+}
+
+.feature-group:nth-child(3) .feature-group-item {
+  font-family: var(--font-robo);
+}
+
+.feature-group:nth-child(3) .feature-group-item-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--fourth-color);
+  padding-top: 10px;
+}
+
+/* TODO: Add to late */
+/*
+mobile devices - sm
+ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+/*
+iPads & tablets - md
+*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/*
+styles common mobile and ipads: c-md
+*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+}
+
+/*
+small screens like laptop : lg
+*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*
+large screens like Desktops: xl
+*/
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/*
+ small screens like laptop and large screens like Desktops: c-xl
+ */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+}

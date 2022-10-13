@@ -1,0 +1,32 @@
+.icon-details {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-robo);
+}
+
+.icon-medium {
+  --size: 36px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.icon-small {
+  --size: 22px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.icon-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 30px;
+  color: var(--third-color);
+}
+
+.icon-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 38px;
+  color: var(--fourth-color);
+}
