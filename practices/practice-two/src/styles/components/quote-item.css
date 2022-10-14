@@ -4,9 +4,6 @@
 .quote-item-desc {
   padding: 20px 0;
 }
-.quote-item-image {
-  width: 100%;
-}
 
 /* TODO: Add to late */
 /*
@@ -29,6 +26,9 @@ styles common mobile and ipads: c-md
     font-size: 20px;
     line-height: 30px;
     padding: 20px 0;
+  }
+  .quote-item-image {
+    width: 100%;
   }
 }
 
