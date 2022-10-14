@@ -1,0 +1,94 @@
+.pricing-item {
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--eighth-color);
+  padding: 0 20px;
+}
+
+.pricing-item-title {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 10px 0;
+}
+
+.pricing-item-price {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 79px;
+  color: var(--third-color);
+}
+
+.pricing-item-month {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--third-color);
+  transform: translateY(-10px);
+}
+
+.pricing-item-description {
+  text-align: center;
+  color: var(--fourth-color);
+  padding-bottom: 30px;
+  line-height: 28px;
+}
+
+.pricing-item-btn {
+  margin: 20px 0;
+  padding: 15px 35px;
+}
+
+/* TODO: Add to late */
+/*
+mobile devices - sm
+ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+/*
+iPads & tablets - md
+*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/*
+styles common mobile and ipads: c-md
+*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .pricing-item {
+    padding: 50px 20px;
+    border: none;
+  }
+}
+
+/*
+small screens like laptop : lg
+*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*
+large screens like Desktops: xl
+*/
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/*
+ small screens like laptop and large screens like Desktops: c-xl
+ */
+@media screen and (min-width: 769px) {
+  .pricing-item:nth-child(2) {
+    border-left: none;
+    border-right: none;
+  }
+
+  .pricing-item {
+    width: 195px;
+  }
+}
