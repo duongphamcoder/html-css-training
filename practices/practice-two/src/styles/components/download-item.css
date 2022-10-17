@@ -1,16 +1,21 @@
-.download {
-  background-image: url(../../assets/images/object.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.download-item:last-child {
+  text-align: center;
 }
 
-.download-wrapper {
-  min-height: 200px;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 2fr 1fr;
-  gap: 30px;
+.download-item .title {
+  font-size: 28px;
+}
+
+.download-item .description {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.download-item .btn {
+  padding: 15px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
 }
 
 /* TODO: Add to late */
@@ -18,9 +23,6 @@
 mobile devices - sm
  */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .download-wrapper {
-    grid-template-columns: 1fr;
-  }
 }
 
 /*
@@ -33,8 +35,9 @@ iPads & tablets - md
 styles common mobile and ipads: c-md
 */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .download-wrapper {
-    padding: 20px 0;
+  .download-item .title {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
