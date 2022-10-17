@@ -3,10 +3,10 @@
   padding: 20px 0;
 }
 
-.need-help-wrapper .heading-title {
-  color: var(--primary-color);
-}
-
 .need-help-wrapper .heading {
   padding-bottom: 10px;
+}
+
+.need-help-wrapper .heading-title {
+  color: var(--primary-color);
 }
