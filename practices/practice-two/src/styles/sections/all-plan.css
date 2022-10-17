@@ -6,7 +6,7 @@
   gap: 30px;
 }
 
-.all-plans-title {
+.all-plans-wrapper > .heading > .heading-title {
   font-weight: 300;
   font-size: 22px;
   line-height: 25px;
