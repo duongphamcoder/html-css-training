@@ -39,7 +39,7 @@
   line-height: 28px;
 }
 
-.pricing-item-btn {
+.pricing-item > .btn {
   margin: 20px 0;
   padding: 15px 35px;
 }
