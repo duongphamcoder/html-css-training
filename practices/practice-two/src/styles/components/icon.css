@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   font-family: var(--font-robo);
+  padding: 3px 0;
 }
 
 .icon-medium {
@@ -19,7 +20,7 @@
 .icon-title {
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
   padding-left: 30px;
   color: var(--third-color);
 }
@@ -27,7 +28,7 @@
 .icon-description {
   font-weight: 400;
   font-size: 12px;
-  line-height: 38px;
+  line-height: 24px;
   color: var(--fourth-color);
   padding-left: 15px;
 }
