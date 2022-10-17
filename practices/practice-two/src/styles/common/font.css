@@ -1,0 +1,11 @@
+.font-merriweather {
+  font-family: var(--font-merri);
+}
+
+.font-roboto {
+  font-family: var(--font-robo);
+}
+
+.font-montserrat {
+  font-family: var(--font-mont);
+}

@@ -1,11 +1,12 @@
-.quote-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+.quote-item {
 }
 
-.quote-item:first-child {
-  color: black;
+.quote-item-desc {
+  padding: 20px 0;
+}
+
+.quote-item-image {
+  width: 100%;
 }
 
 /* TODO: Add to late */
@@ -13,10 +14,6 @@
 mobile devices - sm
  */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .quote-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 40px 0;
-  }
 }
 
 /*
@@ -29,9 +26,10 @@ iPads & tablets - md
 styles common mobile and ipads: c-md
 */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .quote-wrapper {
-    min-height: 480px;
-    align-items: center;
+  .quote-item-desc {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px 0;
   }
 }
 
@@ -51,8 +49,4 @@ large screens like Desktops: xl
  small screens like laptop and large screens like Desktops: c-xl
  */
 @media screen and (min-width: 769px) {
-  .quote-wrapper {
-    min-height: 680px;
-    align-items: center;
-  }
 }
