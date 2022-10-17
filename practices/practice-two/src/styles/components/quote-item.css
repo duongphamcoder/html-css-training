@@ -31,6 +31,10 @@ styles common mobile and ipads: c-md
     line-height: 30px;
     padding: 20px 0;
   }
+
+  .quote-item-image {
+    width: 100%;
+  }
 }
 
 /*
