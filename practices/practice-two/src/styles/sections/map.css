@@ -13,8 +13,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.map-title {
-  font-weight: 300;
+.map-item > .title {
   padding: 20px 0;
 }
 
@@ -53,7 +52,7 @@ iPads & tablets - md
 styles common mobile and ipads: c-md
 */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .map-title {
+  .map-item > .title {
     font-size: 22px;
     padding: 15px 0;
   }
