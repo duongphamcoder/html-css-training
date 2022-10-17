@@ -1,14 +1,18 @@
 .title {
-  color: var(--third-color);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 10px 0;
-  font-family: var(--font-robo);
+  padding: 10px;
 }
 
-.title.bold {
+.title-bold {
+  font-weight: 400;
+}
+
+.title-normal {
   font-weight: 300;
+}
+
+.title-sm {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .title-md {
