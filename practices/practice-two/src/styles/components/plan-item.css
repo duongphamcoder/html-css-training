@@ -1,24 +1,9 @@
-.all-plans-wrapper {
-}
-
-.plans {
-  display: grid;
-  gap: 50px;
-}
-
-.all-plans-title {
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 25px;
-}
-
 /* TODO: Add to late */
 /*
 mobile devices - sm
  */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .plans {
-    grid-template-columns: 1fr;
+  .plan-item {
   }
 }
 
@@ -26,9 +11,6 @@ mobile devices - sm
 iPads & tablets - md
 */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .plans {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 /*
@@ -52,8 +34,5 @@ large screens like Desktops: xl
 /*
  small screens like laptop and large screens like Desktops: c-xl
  */
-@media screen and (min-width: 769px) {
-  .plans {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+@media screen and (min-width: 769px) and (max-width: 1200px) {
 }
