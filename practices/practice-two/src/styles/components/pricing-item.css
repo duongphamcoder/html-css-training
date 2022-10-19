@@ -45,50 +45,35 @@
 }
 
 /* TODO: Add to late */
+
 /*
-mobile devices - sm
+Small
  */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-}
-
-/*
-iPads & tablets - md
-*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
-}
-
-/*
-styles common mobile and ipads: c-md
-*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   .pricing-item {
-    padding: 50px 20px;
-    border: none;
   }
 }
 
 /*
-small screens like laptop : lg
+Medium
 */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
 }
 
 /*
-large screens like Desktops: xl
+Large
 */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) {
 }
 
 /*
- small screens like laptop and large screens like Desktops: c-xl
- */
-@media screen and (min-width: 769px) {
-  .pricing-item:nth-child(2) {
-    border-left: none;
-    border-right: none;
-  }
+X-Large
+*/
+@media screen and (min-width: 1200px) {
+}
 
-  .pricing-item {
-    width: 195px;
-  }
+/*
+XX-Large
+*/
+@media screen and (min-width: 1400px) {
 }

@@ -1,6 +1,7 @@
 .need-help-wrapper {
   text-align: center;
-  padding: 20px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .need-help-wrapper .heading {

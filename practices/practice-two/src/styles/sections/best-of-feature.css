@@ -9,6 +9,7 @@
   gap: 30px;
   padding-bottom: 90px;
   position: relative;
+  grid-template-columns: 1fr;
 }
 
 .feature-group:nth-child(2):before {
@@ -39,19 +40,9 @@
 
 /* TODO: Add to late */
 /*
-mobile devices - sm
+Small
  */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .feature-group:nth-child(2),
-  .feature-group:nth-child(3) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-/*
-iPads & tablets - md
-*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   .feature-group:nth-child(2),
   .feature-group:nth-child(3) {
     grid-template-columns: repeat(2, 1fr);
@@ -59,27 +50,15 @@ iPads & tablets - md
 }
 
 /*
-styles common mobile and ipads: c-md
+Medium
 */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 }
 
 /*
-small screens like laptop : lg
+Large
 */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-}
-
-/*
-large screens like Desktops: xl
-*/
-@media screen and (min-width: 1025px) {
-}
-
-/*
- small screens like laptop and large screens like Desktops: c-xl
- */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   .feature-group:nth-child(2) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -87,4 +66,16 @@ large screens like Desktops: xl
   .feature-group:nth-child(3) {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/*
+X-Large
+*/
+@media screen and (min-width: 1200px) {
+}
+
+/*
+XX-Large
+*/
+@media screen and (min-width: 1400px) {
 }

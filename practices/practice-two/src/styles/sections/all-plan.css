@@ -3,7 +3,8 @@
 
 .plans {
   display: grid;
-  gap: 30px;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
 }
 
 .all-plans-wrapper > .heading > .heading-title {
@@ -13,47 +14,40 @@
 }
 
 /* TODO: Add to late */
-/*
-mobile devices - sm
- */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .plans {
-    grid-template-columns: 1fr;
-  }
-}
 
 /*
-iPads & tablets - md
-*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
+Small
+ */
+@media screen and (min-width: 576px) {
   .plans {
     grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
   }
 }
 
 /*
-styles common mobile and ipads: c-md
+Medium
 */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 }
 
 /*
-small screens like laptop : lg
+Large
 */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-}
-
-/*
-large screens like Desktops: xl
-*/
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-}
-
-/*
- small screens like laptop and large screens like Desktops: c-xl
- */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   .plans {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+/*
+X-Large
+*/
+@media screen and (min-width: 1200px) {
+}
+
+/*
+XX-Large
+*/
+@media screen and (min-width: 1400px) {
 }

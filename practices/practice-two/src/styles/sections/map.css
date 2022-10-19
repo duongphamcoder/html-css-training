@@ -1,19 +1,17 @@
 .map {
-  background: var(--eleventh-color)
-    url(../../assets/images/object.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: var(--eleventh-color);
 }
 
 .map-wrapper {
   min-height: 500px;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 
 .map-item > .title {
+  font-weight: 400;
+  font-size: 22px;
   padding: 20px 0;
 }
 
@@ -24,54 +22,61 @@
   flex-direction: column;
 }
 
+.map-item:last-child {
+  display: none;
+}
+
 /* TODO: Add to late */
+
 /*
-mobile devices - sm
+Small
  */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 576px) {
+}
+
+/*
+Medium
+*/
+@media screen and (min-width: 768px) {
   .map {
-    background: var(--eleventh-color);
+    background: var(--eleventh-color)
+      url(../../assets/images/object.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .map-wrapper {
-    grid-template-columns: 1fr;
+    min-height: 500px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
   }
 
   .map-item:last-child {
-    display: none;
+    display: block;
   }
 }
 
 /*
-iPads & tablets - md
+Large
 */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-}
-
-/*
-styles common mobile and ipads: c-md
-*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 992px) {
   .map-item > .title {
-    font-size: 22px;
-    padding: 15px 0;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
 /*
-small screens like laptop : lg
+X-Large
 */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 1200px) {
 }
 
 /*
-large screens like Desktops: xl
+XX-Large
 */
-@media screen and (min-width: 1025px) {
-}
-
-/*
- small screens like laptop and large screens like Desktops: c-xl
- */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1400px) {
 }
