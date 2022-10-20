@@ -36,6 +36,10 @@
 - Understand the concepts of Flex
 - Divide the breakpoint properly
 
+## Know Issues
+
+- Add CDNJS html-inspector but not working
+
 **Step one:** Clone the code folder from git to your device
 
 - Choose a path to save that file -> At that path open the command window
