@@ -1,5 +1,5 @@
 .download-item:last-child {
-  text-align: center;
+  text-align: left;
 }
 
 .download-item .title {
@@ -13,48 +13,48 @@
 
 .download-item .btn {
   padding: 15px;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 16px;
   font-weight: 300;
 }
 
 /* TODO: Add to late */
+
 /*
-mobile devices - sm
+Small
  */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 576px) {
 }
 
 /*
-iPads & tablets - md
+Medium
 */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-}
-
-/*
-styles common mobile and ipads: c-md
-*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .download-item .title {
     font-size: 20px;
     line-height: 28px;
   }
+
+  .download-item .btn {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 
 /*
-small screens like laptop : lg
+Large
 */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 992px) {
 }
 
 /*
-large screens like Desktops: xl
+X-Large
 */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
 }
 
 /*
- small screens like laptop and large screens like Desktops: c-xl
- */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+XX-Large
+*/
+@media screen and (min-width: 1400px) {
 }

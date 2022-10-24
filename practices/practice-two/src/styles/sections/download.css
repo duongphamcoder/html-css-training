@@ -6,52 +6,46 @@
 }
 
 .download-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
   min-height: 200px;
   display: grid;
   align-items: center;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 
 /* TODO: Add to late */
+
 /*
-mobile devices - sm
+Small
  */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 576px) {
+}
+
+/*
+Medium
+*/
+@media screen and (min-width: 768px) {
+}
+
+/*
+Large
+*/
+@media screen and (min-width: 992px) {
   .download-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
 
 /*
-iPads & tablets - md
+X-Large
 */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
 }
 
 /*
-styles common mobile and ipads: c-md
+XX-Large
 */
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .download-wrapper {
-    padding: 20px 0;
-  }
-}
-
-/*
-small screens like laptop : lg
-*/
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-}
-
-/*
-large screens like Desktops: xl
-*/
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-}
-
-/*
- small screens like laptop and large screens like Desktops: c-xl
- */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 1400px) {
 }

@@ -4,13 +4,15 @@
 .footer-group-top {
   padding: 50px 0;
   box-shadow: 0 1px 0 var(--sixth-color);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 15px 0;
 }
 
 .footer-group-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .footer-list-icon {
@@ -23,51 +25,40 @@
 
 /* TODO: Add to late */
 
-/* mobile devices - sm */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .footer-group-top {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-  }
-}
-
 /*
-iPads & tablets - md
-*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
-}
-
-/*
-styles common mobile and ipads: c-md
-*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .footer-group-top {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-  }
-}
-
-/*
-small screens like laptop : lg
-*/
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-}
-
-/*
-large screens like Desktops: xl
-*/
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-}
-
-/*
- small screens like laptop and large screens like Desktops: c-xl
+Small
  */
-@media screen and (min-width: 769px) {
-  .footer-group-top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+@media screen and (min-width: 576px) {
+  .footer-group-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+}
+
+/*
+Medium
+*/
+@media screen and (min-width: 768px) {
+  .footer-group-top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*
+Large
+*/
+@media screen and (min-width: 992px) {
+}
+
+/*
+X-Large
+*/
+@media screen and (min-width: 1200px) {
+}
+
+/*
+XX-Large
+*/
+@media screen and (min-width: 1400px) {
 }
